@@ -23,7 +23,7 @@ function SubA(what){
         ExamA_D = ( 60 - (numaa+numab) ) * 2
         ExamA_E = ( 50 - (numaa+numab) ) * 2
 
-        alert(String(ExamA_B) + "점을 맞으면 성취도 B, " + String(ExamA_C) + "점을 맞으면 성취도 C, " + String(ExamA_D) + "점을 맞으면 성취도 D, " + String(ExamA_E) + "점을 맞으면 성취도 E입니다.")
+        alert(String(ExamA_B) + "점 이상을 맞으면 성취도 B, " + String(ExamA_C) + "점 이상을 맞으면 성취도 C, " + String(ExamA_D) + "점 이상을 맞으면 성취도 D, " + String(ExamA_E) + "점 이상을 맞으면 성취도 E입니다.")
     }
 
     //alert(ExamA)
@@ -114,7 +114,7 @@ function SubD(what){
         ExamD_D = ( 60 - (numda+numdb) ) * 2
         ExamD_E = ( 50 - (numda+numdb) ) * 2
 
-        alert(String(ExamD_B) + "점을 맞으면 성취도 B, " + String(ExamD_C) + "점을 맞으면 성취도 C, " + String(ExamD_D) + "점을 맞으면 성취도 D, " + String(ExamD_E) + "점을 맞으면 성취도 E입니다.")
+        alert(String(ExamD_B) + "점 이상을 맞으면 성취도 B, " + String(ExamD_C) + "점 이상을 맞으면 성취도 C, " + String(ExamD_D) + "점 이상을 맞으면 성취도 D, " + String(ExamD_E) + "점 이상을 맞으면 성취도 E입니다.")
     }
 
 }
@@ -141,7 +141,7 @@ function SubE(what){
         ExamE_D = ( 60 - (numea+numeb) ) * 2
         ExamE_E = ( 50 - (numea+numeb) ) * 2
 
-        alert(String(ExamE_B) + "점을 맞으면 성취도 B, " + String(ExamE_C) + "점을 맞으면 성취도 C, " + String(ExamE_D) + "점을 맞으면 성취도 D, " + String(ExamE_E) + "점을 맞으면 성취도 E입니다.")
+        alert(String(ExamE_B) + "점 이상을 맞으면 성취도 B, " + String(ExamE_C) + "점 이상을 맞으면 성취도 C, " + String(ExamE_D) + "점 이상을 맞으면 성취도 D, " + String(ExamE_E) + "점 이상을 맞으면 성취도 E입니다.")
     }
 
 }
@@ -168,7 +168,7 @@ function SubF(what){
         ExamF_D = ( 60 - (numfa+numfb) ) * 2
         ExamF_E = ( 50 - (numfa+numfb) ) * 2
 
-        alert(String(ExamF_B) + "점을 맞으면 성취도 B, " + String(ExamF_C) + "점을 맞으면 성취도 C, " + String(ExamF_D) + "점을 맞으면 성취도 D, " + String(ExamF_E) + "점을 맞으면 성취도 E입니다.")
+        alert(String(ExamF_B) + "점 이상을 맞으면 성취도 B, " + String(ExamF_C) + "점 이상을 맞으면 성취도 C, " + String(ExamF_D) + "점 이상을 맞으면 성취도 D, " + String(ExamF_E) + "점 이상을 맞으면 성취도 E입니다.")
     }
 
 }
@@ -184,7 +184,7 @@ function SubG(what){
 
         ExamG = ( 90 - (numga+numgb)) * 2
         if(ExamG < 100){
-            document.getElementById('subject-g-result').innerHTML = "   수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamG) + "점 이상이여야 성취도 A 입니다."
+            document.getElementById('subject-g-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamG) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamG > 100){
             document.getElementById('subject-g-result').innerHTML = "성취도 A를 받을 수 없습니다."
@@ -196,7 +196,7 @@ function SubG(what){
         ExamG_D = ( 60 - (numfa+numfb) ) * 2
         ExamG_E = ( 50 - (numfa+numfb) ) * 2
 
-        alert(String(ExamG_B) + "점을 맞으면 성취도 B, " + String(ExamG_C) + "점을 맞으면 성취도 C, " + String(ExamG_D) + "점을 맞으면 성취도 D, " + String(ExamG_E) + "점을 맞으면 성취도 E입니다.")
+        alert(String(ExamG_B) + "점 이상을 맞으면 성취도 B, " + String(ExamG_C) + "점 이상을 맞으면 성취도 C, " + String(ExamG_D) + "점 이상을 맞으면 성취도 D, " + String(ExamG_E) + "점 이상을 맞으면 성취도 E입니다.")
     }
 
 }
