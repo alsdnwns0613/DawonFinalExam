@@ -18,8 +18,8 @@ function SubA(what){
         }
     }
     if(what=="other-result"){
-        ExamA_B = ( 80 - (numab+numab) ) * 2
-        ExamA_C = ( 70 - (numab+numab) ) * 2
+        ExamA_B = ( 80 - (numaa+numab) ) * 2
+        ExamA_C = ( 70 - (numaa+numab) ) * 2
         ExamA_D = ( 60 - (numaa+numab) ) * 2
         ExamA_E = ( 50 - (numaa+numab) ) * 2
 
@@ -109,8 +109,8 @@ function SubD(what){
         }
     }
     if(what=="other-result"){
-        ExamD_B = ( 80 - (numdb+numdb) ) * 2
-        ExamD_C = ( 70 - (numdb+numdb) ) * 2
+        ExamD_B = ( 80 - (numda+numdb) ) * 2
+        ExamD_C = ( 70 - (numda+numdb) ) * 2
         ExamD_D = ( 60 - (numda+numdb) ) * 2
         ExamD_E = ( 50 - (numda+numdb) ) * 2
 
@@ -136,8 +136,8 @@ function SubE(what){
         }
     }
     if(what=="other-result"){
-        ExamE_B = ( 80 - (numeb+numeb) ) * 2
-        ExamE_C = ( 70 - (numeb+numeb) ) * 2
+        ExamE_B = ( 80 - (numea+numeb) ) * 2
+        ExamE_C = ( 70 - (numea+numeb) ) * 2
         ExamE_D = ( 60 - (numea+numeb) ) * 2
         ExamE_E = ( 50 - (numea+numeb) ) * 2
 
@@ -163,8 +163,8 @@ function SubF(what){
         }
     }
     if(what=="other-result"){
-        ExamF_B = ( 80 - (numfb+numfb) ) * 2
-        ExamF_C = ( 70 - (numfb+numfb) ) * 2
+        ExamF_B = ( 80 - (numfa+numfb) ) * 2
+        ExamF_C = ( 70 - (numfa+numfb) ) * 2
         ExamF_D = ( 60 - (numfa+numfb) ) * 2
         ExamF_E = ( 50 - (numfa+numfb) ) * 2
 
@@ -191,10 +191,10 @@ function SubG(what){
         }
     }
     if(what=="other-result"){
-        ExamG_B = ( 80 - (numfb+numfb) ) * 2
-        ExamG_C = ( 70 - (numfb+numfb) ) * 2
-        ExamG_D = ( 60 - (numfa+numfb) ) * 2
-        ExamG_E = ( 50 - (numfa+numfb) ) * 2
+        ExamG_B = ( 80 - (numga+numgb) ) * 2
+        ExamG_C = ( 70 - (numga+numgb) ) * 2
+        ExamG_D = ( 60 - (numga+numgb) ) * 2
+        ExamG_E = ( 50 - (numga+numgb) ) * 2
 
         alert(String(ExamG_B) + "점 이상을 맞으면 성취도 B, " + String(ExamG_C) + "점 이상을 맞으면 성취도 C, " + String(ExamG_D) + "점 이상을 맞으면 성취도 D, " + String(ExamG_E) + "점 이상을 맞으면 성취도 E입니다.")
     }
