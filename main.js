@@ -18,13 +18,56 @@ function SubA(what){
         }
     }
     if(what=="other-result"){
-        ExamA_B = ( 80 - (numaa+numab) ) * 2
-        ExamA_C = ( 70 - (numaa+numab) ) * 2
-        ExamA_D = ( 60 - (numaa+numab) ) * 2
-        ExamA_E = ( 50 - (numaa+numab) ) * 2
 
-        //기말점수가 적어도 x점이야 성취도 B,
-        alert("기말고사 점수가 적어도 " + String(ExamA_B) + "점이여야 성취도 B, " + String(ExamA_C) + "점이여야 성취도 C, " + String(ExamA_D) + "점이여야 성취도 D, " + String(ExamA_E) + "점이여야 성취도 E입니다.")
+        ExamA_B = ( 80 - (numaa+numab) ) * 2
+        ExamA_B_text = ""
+        if(ExamA_B > 100){
+            ExamA_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamA_B < 100){
+            ExamA_B_text = "적어도 " + String(Math.round(ExamA_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamA_B < 0){
+            ExamA_B_text = "성취도 B는 나오지 않습니다."
+        }
+
+        ExamA_C = ( 70 - (numaa+numab) ) * 2
+        ExamA_C_text = ""
+        if(ExamA_C > 100){
+            ExamA_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamA_C < 100){
+            ExamA_C_text = "적어도 " + String(Math.round(ExamA_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamA_C < 0){
+            ExamA_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamA_D = ( 60 - (numaa+numab) ) * 2
+        ExamA_D_text = ""
+        if(ExamA_D > 100){
+            ExamA_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamA_D < 100){
+            ExamA_D_text = "적어도 " + String(Math.round(ExamA_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamA_D < 0){
+            ExamA_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamA_E = ( 50 - (numaa+numab) ) * 2
+        ExamA_E_text = ""
+        if(ExamA_E > 100){
+            ExamA_E_text = "성취도 E를 맞을 수 없습니다."
+        }
+        if(ExamA_E < 100 ){
+            ExamA_E_text = "적어도 " + String(Math.round(ExamA_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamA_E < 0){
+            ExamA_E_text = "성취도 E는 나오지 않습니다."
+        }
+
+        alert(ExamA_B_text + ExamA_C_text + ExamA_D_text + ExamA_E_text)
     }
 
     //alert(ExamA)
@@ -55,14 +98,57 @@ function SubB(what){
             document.getElementById('subject-b-result').innerHTML = "성취도 A를 받을 수 없습니다."
         } //!A{}
     }
-    if(what=="other-result"){
-        // ExamB_B = (( 80 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
-        // ExamB_C = (( 70 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
-        // ExamB_D = (( 60 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
-        // ExamB_E = (( 50 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
+    if(what=="other-result"){ //numbb+numbc+numbd+numbe = 35(if perfect score)
+        
+        ExamB_B = (( 80 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
+        ExamB_B_text = ""
+        if(ExamB_B > 100){
+            ExamB_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamB_B < 100){
+            ExamB_B_text = "적어도 " + String(Math.round(ExamB_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamB_B < 0){
+            ExamB_B_text = "성취도 B는 나오지 않습니다."
+        }
 
-        // alert(String(Math.round(ExamB_B)) + "점을 맞으면 성취도 B, " + String(Math.round(ExamB_C)) + "점을 맞으면 성취도 C, " + String(Math.round(ExamB_D)) + "점을 맞으면 성취도 D, " + String(Math.round(ExamB_E)) + "점을 맞으면 성취도 E입니다.")
-        alert('영어는 release 1.0버전 때 활성화됩니다.')
+        ExamB_C = (( 70 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
+        ExamB_C_text = ""
+        if(ExamB_C > 100){
+            ExamB_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamB_C < 100){
+            ExamB_C_text = "적어도 " + String(Math.round(ExamB_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamB_C < 0){
+            ExamB_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamB_D = (( 60 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
+        ExamB_D_text = ""
+        if(ExamB_D > 100){
+            ExamB_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamB_D < 100){
+            ExamB_D_text = "적어도 " + String(Math.round(ExamB_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamB_D < 0){
+            ExamB_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamB_E = (( 50 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
+        ExamB_E_text = ""
+        if(ExamB_E > 100){
+            ExamB_E_text = "성취도 E를 맞을 수 없습니다."
+        }
+        if(ExamB_E < 100 ){
+            ExamB_E_text = "적어도 " + String(Math.round(ExamB_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamB_E < 0){
+            ExamB_E_text = "성취도 E는 나오지 않습니다."
+        }
+
+        alert(ExamB_B_text + ExamB_C_text + ExamB_D_text + ExamB_E_text)
     }
 
 }
@@ -85,10 +171,58 @@ function SubC(what){
         }
         if(ExamC > 100){
             document.getElementById('subject-c-result').innerHTML = "성취도 A를 받을 수 없습니다."
-        }
+        }   
     }
     if(what=="other-result"){
-        alert('수학은 release 1.0버전 때 활성화됩니다.')
+        ExamC_B = ( ( 80 - ((30*numca/100)+numcb+numcc+numcd) ) * 100) / 30
+        ExamC_B_text = ""
+        if(ExamC_B > 100){
+            ExamC_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamC_B < 100){
+            ExamC_B_text = "적어도 " + String(Math.round(ExamC_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamC_B < 0){
+            ExamC_B_text = "성취도 B는 나오지 않습니다."
+        }
+
+        ExamC_C = ( ( 70 - ((30*numca/100)+numcb+numcc+numcd) ) * 100) / 30
+        ExamC_C_text = ""
+        if(ExamC_C > 100){
+            ExamC_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamC_C < 100){
+            ExamC_C_text = "적어도 " + String(Math.round(ExamC_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamC_C < 0){
+            ExamC_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamC_D = ( ( 60 - ((30*numca/100)+numcb+numcc+numcd) ) * 100) / 30
+        ExamC_D_text = ""
+        if(ExamC_D > 100){
+            ExamC_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamC_D < 100){
+            ExamC_D_text = "적어도 " + String(Math.round(ExamC_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamC_D < 0){
+            ExamC_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamC_E = ( ( 50 - ((30*numca/100)+numcb+numcc+numcd) ) * 100) / 30
+        ExamC_E_text = ""
+        if(ExamC_E > 100){
+            ExamC_E_text = "성취도 E를 맞을 수 없습니다."
+        }
+        if(ExamC_E < 100 ){
+            ExamC_E_text = "적어도 " + String(Math.round(ExamC_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamC_E < 0){
+            ExamC_E_text = "성취도 E는 나오지 않습니다."
+        }
+
+        alert(ExamC_B_text + ExamC_C_text + ExamC_D_text + ExamC_E_text)
     }
 
 }
@@ -110,12 +244,56 @@ function SubD(what){
         }
     }
     if(what=="other-result"){
-        ExamD_B = ( 80 - (numda+numdb) ) * 2
-        ExamD_C = ( 70 - (numda+numdb) ) * 2
-        ExamD_D = ( 60 - (numda+numdb) ) * 2
-        ExamD_E = ( 50 - (numda+numdb) ) * 2
 
-        alert("기말고사 점수가 적어도 " + String(ExamD_B) + "점이여야 성취도 B, " + String(ExamD_C) + "점이여야 성취도 C, " + String(ExamD_D) + "점이여야 성취도 D, " + String(ExamD_E) + "점이여야 성취도 E입니다.")
+        ExamD_B = ( 80 - (numda+numdb) ) * 2
+        ExamD_B_text = ""
+        if(ExamD_B > 100){
+            ExamD_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamD_B < 100){
+            ExamD_B_text = "적어도 " + String(Math.round(ExamD_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamD_B < 0){
+            ExamD_B_text = "성취도 B는 나오지 않습니다."
+        }
+
+        ExamD_C = ( 70 - (numda+numdb) ) * 2
+        ExamD_C_text = ""
+        if(ExamD_C > 100){
+            ExamD_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamD_C < 100){
+            ExamD_C_text = "적어도 " + String(Math.round(ExamD_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamD_C < 0){
+            ExamD_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamD_D = ( 60 - (numda+numdb) ) * 2
+        ExamD_D_text = ""
+        if(ExamD_D > 100){
+            ExamD_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamD_D < 100){
+            ExamD_D_text = "적어도 " + String(Math.round(ExamD_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamD_D < 0){
+            ExamD_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamD_E = ( 50 - (numda+numdb) ) * 2
+        ExamD_E_text = ""
+        if(ExamD_E > 100){
+            ExamD_E_text = "성취도 E를 맞을 수 없습니다."
+        }
+        if(ExamD_E < 100 ){
+            ExamD_E_text = "적어도 " + String(Math.round(ExamD_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamD_E < 0){
+            ExamD_E_text = "성취도 E는 나오지 않습니다."
+        }
+
+        alert(ExamD_B_text + ExamD_C_text + ExamD_D_text + ExamD_E_text)
     }
 
 }
@@ -137,12 +315,56 @@ function SubE(what){
         }
     }
     if(what=="other-result"){
-        ExamE_B = ( 80 - (numea+numeb) ) * 2
-        ExamE_C = ( 70 - (numea+numeb) ) * 2
-        ExamE_D = ( 60 - (numea+numeb) ) * 2
-        ExamE_E = ( 50 - (numea+numeb) ) * 2
 
-        alert("기말고사 점수가 적어도 " + String(ExamE_B) + "점이여야 성취도 B, " + String(ExamE_C) + "점이여야 성취도 C, " + String(ExamE_D) + "점이여야 성취도 D, " + String(ExamE_E) + "점이여야 성취도 E입니다.")
+        ExamE_B = ( 80 - (numea+numeb) ) * 2
+        ExamE_B_text = ""
+        if(ExamE_B > 100){
+            ExamE_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamE_B < 100){
+            ExamE_B_text = "적어도 " + String(Math.round(ExamE_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamE_B < 0){
+            ExamE_B_text = "성취도 B는 나오지 않습니다."
+        }
+
+        ExamE_C = ( 70 - (numea+numeb) ) * 2
+        ExamE_C_text = ""
+        if(ExamE_C > 100){
+            ExamE_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamE_C < 100){
+            ExamE_C_text = "적어도 " + String(Math.round(ExamE_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamE_C < 0){
+            ExamE_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamE_D = ( 60 - (numea+numeb) ) * 2
+        ExamE_D_text = ""
+        if(ExamE_D > 100){
+            ExamE_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamE_D < 100){
+            ExamE_D_text = "적어도 " + String(Math.round(ExamE_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamE_D < 0){
+            ExamE_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamE_E = ( 50 - (numea+numeb) ) * 2
+        ExamE_E_text = ""
+        if(ExamE_E > 100){
+            ExamE_E_text = "성취도 E를 맞을 수 없습니다."
+        }
+        if(ExamE_E < 100 ){
+            ExamE_E_text = "적어도 " + String(Math.round(ExamE_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamE_E < 0){
+            ExamE_E_text = "성취도 E는 나오지 않습니다."
+        }
+
+        alert(ExamE_B_text + ExamE_C_text + ExamE_D_text + ExamE_E_text)
     }
 
 }
@@ -164,13 +386,59 @@ function SubF(what){
         }
     }
     if(what=="other-result"){
-        ExamF_B = ( 80 - (numfa+numfb) ) * 2
-        ExamF_C = ( 70 - (numfa+numfb) ) * 2
-        ExamF_D = ( 60 - (numfa+numfb) ) * 2
-        ExamF_E = ( 50 - (numfa+numfb) ) * 2
 
-        alert("기말고사 점수가 적어도 " + String(ExamF_B) + "점이여야 성취도 B, " + String(ExamF_C) + "점이여야 성취도 C, " + String(ExamF_D) + "점이여야 성취도 D, " + String(ExamF_E) + "점이여야 성취도 E입니다.")
+        ExamF_B = ( 80 - (numfa+numfb) ) * 2
+        ExamF_B_text = ""
+        if(ExamF_B > 100){
+            ExamF_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamF_B < 100){
+            ExamF_B_text = "적어도 " + String(Math.round(ExamF_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamF_B < 0){
+            ExamF_B_text = "성취도 B는 나오지 않습니다."
+        }
+
+        ExamF_C = ( 70 - (numfa+numfb) ) * 2
+        ExamF_C_text = ""
+        if(ExamF_C > 100){
+            ExamF_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamF_C < 100){
+            ExamF_C_text = "적어도 " + String(Math.round(ExamF_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamF_C < 0){
+            ExamF_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamF_D = ( 60 - (numfa+numfb) ) * 2
+        ExamF_D_text = ""
+        if(ExamF_D > 100){
+            ExamF_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamF_D < 100){
+            ExamF_D_text = "적어도 " + String(Math.round(ExamF_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamF_D < 0){
+            ExamF_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamF_E = ( 50 - (numfa+numfb) ) * 2
+        ExamF_E_text = ""
+        if(ExamF_E > 100){
+            ExamF_E_text = "성취도 F를 맞을 수 없습니다."
+        }
+        if(ExamF_E < 100 ){
+            ExamF_E_text = "적어도 " + String(Math.round(ExamF_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamF_E < 0){
+            ExamF_E_text = "성취도 F는 나오지 않습니다."
+        }
+
+        alert(ExamF_B_text + ExamF_C_text + ExamF_D_text + ExamF_E_text)
     }
+    
+
 
 }
 
@@ -192,12 +460,56 @@ function SubG(what){
         }
     }
     if(what=="other-result"){
-        ExamG_B = ( 80 - (numga+numgb) ) * 2
-        ExamG_C = ( 70 - (numga+numgb) ) * 2
-        ExamG_D = ( 60 - (numga+numgb) ) * 2
-        ExamG_E = ( 50 - (numga+numgb) ) * 2
 
-        alert("기말고사 점수가 적어도 " + String(ExamG_B) + "점이여야 성취도 B, " + String(ExamG_C) + "점이여야 성취도 C, " + String(ExamG_D) + "점이여야 성취도 D, " + String(ExamG_E) + "점이여야 성취도 E입니다.")
+        ExamG_B = ( 80 - (numga+numgb) ) * 2
+        ExamG_B_text = ""
+        if(ExamG_B > 100){
+            ExamG_B_text = "성취도 B를 맞을 수 없습니다."
+        }
+        if(ExamG_B < 100){
+            ExamG_B_text = "적어도 " + String(Math.round(ExamG_B)) + "점을 맞으면 성취도 B입니다."
+        }
+        if(ExamG_B < 0){
+            ExamG_B_text = "성취도 B는 나오지 않습니다."
+        }
+
+        ExamG_C = ( 70 - (numga+numgb) ) * 2
+        ExamG_C_text = ""
+        if(ExamG_C > 100){
+            ExamG_C_text = "성취도 C를 맞을 수 없습니다."
+        }
+        if(ExamG_C < 100){
+            ExamG_C_text = "적어도 " + String(Math.round(ExamG_C)) + "점을 맞으면 성취도 C입니다."
+        }
+        if(ExamG_C < 0){
+            ExamG_C_text = "성취도 C는 나오지 않습니다."
+        }
+
+        ExamG_D = ( 60 - (numga+numgb) ) * 2
+        ExamG_D_text = ""
+        if(ExamG_D > 100){
+            ExamG_D_text = "성취도 D를 맞을 수 없습니다."
+        }
+        if(ExamG_D < 100){
+            ExamG_D_text = "적어도 " + String(Math.round(ExamG_D)) + "점을 맞으면 성취도 D입니다."
+        }
+        if(ExamG_D < 0){
+            ExamG_D_text = "성취도 D는 나오지 않습니다."
+        }
+
+        ExamG_E = ( 50 - (numga+numgb) ) * 2
+        ExamG_E_text = ""
+        if(ExamG_E > 100){
+            ExamG_E_text = "성취도 F를 맞을 수 없습니다."
+        }
+        if(ExamG_E < 100 ){
+            ExamG_E_text = "적어도 " + String(Math.round(ExamG_E)) + "점을 맞으면 성취도 E입니다."
+        }
+        if(ExamG_E < 0){
+            ExamG_E_text = "성취도 F는 나오지 않습니다."
+        }
+
+        alert(ExamG_B_text + ExamG_C_text + ExamG_D_text + ExamG_E_text)
     }
 
 }
