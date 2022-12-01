@@ -9,7 +9,7 @@ function SubA(what){
     if(what == "real-result"){
 
         ExamA = ( 90 - (numaa+numab) ) * 2
-        if(ExamA < 100){ //성취도 A
+        if(ExamA <= 100){ //성취도 A
             document.getElementById('subject-a-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamA) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamA > 100){
@@ -24,7 +24,7 @@ function SubA(what){
         if(ExamA_B > 100){
             ExamA_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamA_B < 100){
+        if(ExamA_B <= 100){
             ExamA_B_text = "적어도 " + String(Math.round(ExamA_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamA_B < 0){
@@ -36,7 +36,7 @@ function SubA(what){
         if(ExamA_C > 100){
             ExamA_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamA_C < 100){
+        if(ExamA_C <= 100){
             ExamA_C_text = "적어도 " + String(Math.round(ExamA_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamA_C < 0){
@@ -48,7 +48,7 @@ function SubA(what){
         if(ExamA_D > 100){
             ExamA_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamA_D < 100){
+        if(ExamA_D <= 100){
             ExamA_D_text = "적어도 " + String(Math.round(ExamA_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamA_D < 0){
@@ -60,7 +60,7 @@ function SubA(what){
         if(ExamA_E > 100){
             ExamA_E_text = "성취도 E를 맞을 수 없습니다."
         }
-        if(ExamA_E < 100 ){
+        if(ExamA_E <= 100 ){
             ExamA_E_text = "적어도 " + String(Math.round(ExamA_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamA_E < 0){
@@ -91,7 +91,7 @@ function SubB(what){
         ExamB = (( 90 - ((35*numba/100)+numbb+numbc+numbd+numbe) ) * 100 ) / 35
 
         //alert(ExamB)
-        if(ExamB < 100){
+        if(ExamB <= 100){
             document.getElementById('subject-b-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(Math.round(ExamB)) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamB > 100){
@@ -105,7 +105,7 @@ function SubB(what){
         if(ExamB_B > 100){
             ExamB_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamB_B < 100){
+        if(ExamB_B <= 100){
             ExamB_B_text = "적어도 " + String(Math.round(ExamB_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamB_B < 0){
@@ -117,7 +117,7 @@ function SubB(what){
         if(ExamB_C > 100){
             ExamB_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamB_C < 100){
+        if(ExamB_C <= 100){
             ExamB_C_text = "적어도 " + String(Math.round(ExamB_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamB_C < 0){
@@ -129,7 +129,7 @@ function SubB(what){
         if(ExamB_D > 100){
             ExamB_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamB_D < 100){
+        if(ExamB_D <= 100){
             ExamB_D_text = "적어도 " + String(Math.round(ExamB_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamB_D < 0){
@@ -141,7 +141,7 @@ function SubB(what){
         if(ExamB_E > 100){
             ExamB_E_text = "성취도 E를 맞을 수 없습니다."
         }
-        if(ExamB_E < 100 ){
+        if(ExamB_E <= 100 ){
             ExamB_E_text = "적어도 " + String(Math.round(ExamB_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamB_E < 0){
@@ -166,7 +166,7 @@ function SubC(what){
 
     if(what== "real-result"){
         ExamC = ( ( 90 - ((30*numca/100)+numcb+numcc+numcd) ) * 100) / 30
-        if (ExamC < 100){
+        if (ExamC <= 100){
             document.getElementById('subject-c-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(Math.round(ExamC)) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamC > 100){
@@ -179,7 +179,7 @@ function SubC(what){
         if(ExamC_B > 100){
             ExamC_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamC_B < 100){
+        if(ExamC_B <= 100){
             ExamC_B_text = "적어도 " + String(Math.round(ExamC_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamC_B < 0){
@@ -191,7 +191,7 @@ function SubC(what){
         if(ExamC_C > 100){
             ExamC_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamC_C < 100){
+        if(ExamC_C <= 100){
             ExamC_C_text = "적어도 " + String(Math.round(ExamC_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamC_C < 0){
@@ -203,7 +203,7 @@ function SubC(what){
         if(ExamC_D > 100){
             ExamC_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamC_D < 100){
+        if(ExamC_D <= 100){
             ExamC_D_text = "적어도 " + String(Math.round(ExamC_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamC_D < 0){
@@ -215,7 +215,7 @@ function SubC(what){
         if(ExamC_E > 100){
             ExamC_E_text = "성취도 E를 맞을 수 없습니다."
         }
-        if(ExamC_E < 100 ){
+        if(ExamC_E <= 100 ){
             ExamC_E_text = "적어도 " + String(Math.round(ExamC_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamC_E < 0){
@@ -236,7 +236,7 @@ function SubD(what){
 
     if(what== "real-result"){
         ExamD = ( 90 - (numda+numdb)) * 2
-        if(ExamD < 100){
+        if(ExamD <= 100){
             document.getElementById('subject-d-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamD) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamD > 100){
@@ -250,7 +250,7 @@ function SubD(what){
         if(ExamD_B > 100){
             ExamD_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamD_B < 100){
+        if(ExamD_B <= 100){
             ExamD_B_text = "적어도 " + String(Math.round(ExamD_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamD_B < 0){
@@ -262,7 +262,7 @@ function SubD(what){
         if(ExamD_C > 100){
             ExamD_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamD_C < 100){
+        if(ExamD_C <= 100){
             ExamD_C_text = "적어도 " + String(Math.round(ExamD_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamD_C < 0){
@@ -274,7 +274,7 @@ function SubD(what){
         if(ExamD_D > 100){
             ExamD_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamD_D < 100){
+        if(ExamD_D <= 100){
             ExamD_D_text = "적어도 " + String(Math.round(ExamD_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamD_D < 0){
@@ -286,7 +286,7 @@ function SubD(what){
         if(ExamD_E > 100){
             ExamD_E_text = "성취도 E를 맞을 수 없습니다."
         }
-        if(ExamD_E < 100 ){
+        if(ExamD_E <= 100 ){
             ExamD_E_text = "적어도 " + String(Math.round(ExamD_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamD_E < 0){
@@ -307,7 +307,7 @@ function SubE(what){
 
     if(what=="real-result"){
         ExamE = ( 90 - (numea+numeb)) * 2
-        if(ExamE < 100){
+        if(ExamE <= 100){
             document.getElementById('subject-e-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamE) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamE >100){
@@ -321,7 +321,7 @@ function SubE(what){
         if(ExamE_B > 100){
             ExamE_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamE_B < 100){
+        if(ExamE_B <= 100){
             ExamE_B_text = "적어도 " + String(Math.round(ExamE_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamE_B < 0){
@@ -333,7 +333,7 @@ function SubE(what){
         if(ExamE_C > 100){
             ExamE_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamE_C < 100){
+        if(ExamE_C <= 100){
             ExamE_C_text = "적어도 " + String(Math.round(ExamE_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamE_C < 0){
@@ -345,7 +345,7 @@ function SubE(what){
         if(ExamE_D > 100){
             ExamE_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamE_D < 100){
+        if(ExamE_D <= 100){
             ExamE_D_text = "적어도 " + String(Math.round(ExamE_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamE_D < 0){
@@ -357,7 +357,7 @@ function SubE(what){
         if(ExamE_E > 100){
             ExamE_E_text = "성취도 E를 맞을 수 없습니다."
         }
-        if(ExamE_E < 100 ){
+        if(ExamE_E <= 100 ){
             ExamE_E_text = "적어도 " + String(Math.round(ExamE_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamE_E < 0){
@@ -378,7 +378,7 @@ function SubF(what){
 
     if(what == "real-result"){
         ExamF = ( 90 - (numfa+numfb)) * 2
-        if(ExamF < 100){
+        if(ExamF <= 100){
             document.getElementById('subject-f-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamF) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamF > 100){
@@ -392,7 +392,7 @@ function SubF(what){
         if(ExamF_B > 100){
             ExamF_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamF_B < 100){
+        if(ExamF_B <= 100){
             ExamF_B_text = "적어도 " + String(Math.round(ExamF_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamF_B < 0){
@@ -404,7 +404,7 @@ function SubF(what){
         if(ExamF_C > 100){
             ExamF_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamF_C < 100){
+        if(ExamF_C <= 100){
             ExamF_C_text = "적어도 " + String(Math.round(ExamF_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamF_C < 0){
@@ -416,7 +416,7 @@ function SubF(what){
         if(ExamF_D > 100){
             ExamF_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamF_D < 100){
+        if(ExamF_D <= 100){
             ExamF_D_text = "적어도 " + String(Math.round(ExamF_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamF_D < 0){
@@ -428,7 +428,7 @@ function SubF(what){
         if(ExamF_E > 100){
             ExamF_E_text = "성취도 F를 맞을 수 없습니다."
         }
-        if(ExamF_E < 100 ){
+        if(ExamF_E <= 100 ){
             ExamF_E_text = "적어도 " + String(Math.round(ExamF_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamF_E < 0){
@@ -452,7 +452,7 @@ function SubG(what){
     if(what=="real-result"){
 
         ExamG = ( 90 - (numga+numgb)) * 2
-        if(ExamG < 100){
+        if(ExamG <= 100){
             document.getElementById('subject-g-result').innerHTML = "수행평가 점수가 위와 같을 때, 기말 점수가 적어도 " + String(ExamG) + "점 이상이여야 성취도 A 입니다."
         }
         if(ExamG > 100){
@@ -466,7 +466,7 @@ function SubG(what){
         if(ExamG_B > 100){
             ExamG_B_text = "성취도 B를 맞을 수 없습니다."
         }
-        if(ExamG_B < 100){
+        if(ExamG_B <= 100){
             ExamG_B_text = "적어도 " + String(Math.round(ExamG_B)) + "점을 맞으면 성취도 B입니다."
         }
         if(ExamG_B < 0){
@@ -478,7 +478,7 @@ function SubG(what){
         if(ExamG_C > 100){
             ExamG_C_text = "성취도 C를 맞을 수 없습니다."
         }
-        if(ExamG_C < 100){
+        if(ExamG_C <= 100){
             ExamG_C_text = "적어도 " + String(Math.round(ExamG_C)) + "점을 맞으면 성취도 C입니다."
         }
         if(ExamG_C < 0){
@@ -490,7 +490,7 @@ function SubG(what){
         if(ExamG_D > 100){
             ExamG_D_text = "성취도 D를 맞을 수 없습니다."
         }
-        if(ExamG_D < 100){
+        if(ExamG_D <= 100){
             ExamG_D_text = "적어도 " + String(Math.round(ExamG_D)) + "점을 맞으면 성취도 D입니다."
         }
         if(ExamG_D < 0){
@@ -502,7 +502,7 @@ function SubG(what){
         if(ExamG_E > 100){
             ExamG_E_text = "성취도 F를 맞을 수 없습니다."
         }
-        if(ExamG_E < 100 ){
+        if(ExamG_E <= 100 ){
             ExamG_E_text = "적어도 " + String(Math.round(ExamG_E)) + "점을 맞으면 성취도 E입니다."
         }
         if(ExamG_E < 0){
