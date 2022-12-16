@@ -22,3 +22,21 @@ h2{
 p{
     color: #8f8f8f
 }
+#your-effort{
+    font-size: 3.5rem;
+    text-align: center;
+    justify-content: center;
+    color: white;  
+}
+a:link {
+    color : antiquewhite;
+  }
+  a:visited {
+    color : antiquewhite;
+  }
+  a:hover {
+    color : antiquewhite;
+  }
+  a:active {
+    color : antiquewhite;
+  }
